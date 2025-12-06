@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDoc", "ApiDoc\ApiDoc.csproj", "{9847D45C-6EC6-453E-9CCE-B6BCA83E0883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDoc.AppHost", "ApiDoc.AppHost\ApiDoc.AppHost.csproj", "{5B2D4798-056C-4D01-BD7A-465A55009D0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDoc.ServiceDefaults", "ApiDoc.ServiceDefaults\ApiDoc.ServiceDefaults.csproj", "{7B7366BD-A987-469C-AB4E-A376248C3C05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9847D45C-6EC6-453E-9CCE-B6BCA83E0883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9847D45C-6EC6-453E-9CCE-B6BCA83E0883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9847D45C-6EC6-453E-9CCE-B6BCA83E0883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9847D45C-6EC6-453E-9CCE-B6BCA83E0883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B2D4798-056C-4D01-BD7A-465A55009D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2D4798-056C-4D01-BD7A-465A55009D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2D4798-056C-4D01-BD7A-465A55009D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2D4798-056C-4D01-BD7A-465A55009D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B7366BD-A987-469C-AB4E-A376248C3C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B7366BD-A987-469C-AB4E-A376248C3C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B7366BD-A987-469C-AB4E-A376248C3C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B7366BD-A987-469C-AB4E-A376248C3C05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

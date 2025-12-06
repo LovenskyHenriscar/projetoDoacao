@@ -1,0 +1,988 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ProjetoDoacao",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Doacao": {
+      "post": {
+        "tags": [
+          "Doacao"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "UsuarioId": {
+                    "type": "integer",
+                    "format": "int64"
+                  },
+                  "Tipo": {
+                    "type": "string"
+                  },
+                  "Nome": {
+                    "type": "string"
+                  },
+                  "Condicao": {
+                    "type": "string"
+                  },
+                  "Descricao": {
+                    "type": "string"
+                  },
+                  "Quantidade": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Validade": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Motivo": {
+                    "type": "string"
+                  },
+                  "DataDoacao": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "DoadorNome": {
+                    "type": "string"
+                  },
+                  "DoadorTelefone": {
+                    "type": "string"
+                  },
+                  "Endereco": {
+                    "type": "string"
+                  },
+                  "Foto": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "RetiradaEmCasa": {
+                    "type": "boolean"
+                  },
+                  "RuaRetirada": {
+                    "type": "string"
+                  },
+                  "NumeroRetirada": {
+                    "type": "string"
+                  },
+                  "BairroRetirada": {
+                    "type": "string"
+                  },
+                  "CidadeRetirada": {
+                    "type": "string"
+                  },
+                  "CepRetirada": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "UsuarioId": {
+                  "style": "form"
+                },
+                "Tipo": {
+                  "style": "form"
+                },
+                "Nome": {
+                  "style": "form"
+                },
+                "Condicao": {
+                  "style": "form"
+                },
+                "Descricao": {
+                  "style": "form"
+                },
+                "Quantidade": {
+                  "style": "form"
+                },
+                "Validade": {
+                  "style": "form"
+                },
+                "Motivo": {
+                  "style": "form"
+                },
+                "DataDoacao": {
+                  "style": "form"
+                },
+                "DoadorNome": {
+                  "style": "form"
+                },
+                "DoadorTelefone": {
+                  "style": "form"
+                },
+                "Endereco": {
+                  "style": "form"
+                },
+                "Foto": {
+                  "style": "form"
+                },
+                "RetiradaEmCasa": {
+                  "style": "form"
+                },
+                "RuaRetirada": {
+                  "style": "form"
+                },
+                "NumeroRetirada": {
+                  "style": "form"
+                },
+                "BairroRetirada": {
+                  "style": "form"
+                },
+                "CidadeRetirada": {
+                  "style": "form"
+                },
+                "CepRetirada": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Doacao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doacao/historico/{usuarioId}": {
+      "get": {
+        "tags": [
+          "Doacao"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doacao/disponiveis": {
+      "get": {
+        "tags": [
+          "Doacao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doacao/{id}": {
+      "get": {
+        "tags": [
+          "Doacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Doacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Doacao/disponiveis/marcar-doado/{id}": {
+      "patch": {
+        "tags": [
+          "Doacao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuantidadeDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuantidadeDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/QuantidadeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ItemProd": {
+      "post": {
+        "tags": [
+          "ItemProd"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemProd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemProd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemProd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "ItemProd"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ItemProd"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemProd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemProd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemProd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ItemProd/{id}": {
+      "get": {
+        "tags": [
+          "ItemProd"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ItemProd"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/cadastrar": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/buscar/{id}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/listar": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/atualizar/{id}": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Usuario"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuario/excluir/{id}": {
+      "delete": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Categoria": {
+        "type": "object",
+        "properties": {
+          "idCategoria": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
+            "type": "number",
+            "format": "double"
+          },
+          "peso": {
+            "type": "number",
+            "format": "double"
+          },
+          "produtos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Produto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Doacao": {
+        "type": "object",
+        "properties": {
+          "idDoacao": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "usuarioId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "condicao": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "validade": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "motivo": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataDoacao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataAtualizacao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endereco": {
+            "type": "string",
+            "nullable": true
+          },
+          "retiradaEmCasa": {
+            "type": "boolean"
+          },
+          "ruaRetirada": {
+            "type": "string",
+            "nullable": true
+          },
+          "numeroRetirada": {
+            "type": "string",
+            "nullable": true
+          },
+          "bairroRetirada": {
+            "type": "string",
+            "nullable": true
+          },
+          "cidadeRetirada": {
+            "type": "string",
+            "nullable": true
+          },
+          "cepRetirada": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "fotoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "doadorNome": {
+            "type": "string",
+            "nullable": true
+          },
+          "doadorTelefone": {
+            "type": "string",
+            "nullable": true
+          },
+          "doador": {
+            "$ref": "#/components/schemas/Doador"
+          },
+          "itemProds": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemProd"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Doador": {
+        "type": "object",
+        "properties": {
+          "idDoador": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefone": {
+            "type": "string",
+            "nullable": true
+          },
+          "endereco": {
+            "type": "string",
+            "nullable": true
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "doacaolist": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Doacao"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItemProd": {
+        "type": "object",
+        "properties": {
+          "idItemProd": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "produtoId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "itensRecepcaoId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "produto": {
+            "$ref": "#/components/schemas/Produto"
+          },
+          "itensRecepcao": {
+            "$ref": "#/components/schemas/ItensRecepcao"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItensRecepcao": {
+        "type": "object",
+        "properties": {
+          "idItensRecepcao": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "quantidade": {
+            "type": "number",
+            "format": "double"
+          },
+          "recepcao1": {
+            "$ref": "#/components/schemas/Recepcao"
+          },
+          "itemProd1": {
+            "$ref": "#/components/schemas/ItemProd"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Produto": {
+        "type": "object",
+        "properties": {
+          "idProduto": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade": {
+            "type": "number",
+            "format": "double"
+          },
+          "peso": {
+            "type": "number",
+            "format": "double"
+          },
+          "itemProd": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemProd"
+            },
+            "nullable": true
+          },
+          "categorias": {
+            "$ref": "#/components/schemas/Categoria"
+          }
+        },
+        "additionalProperties": false
+      },
+      "QuantidadeDto": {
+        "type": "object",
+        "properties": {
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Recepcao": {
+        "type": "object",
+        "properties": {
+          "idRecepcao": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataSolicitacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "quantidade": {
+            "type": "number",
+            "format": "double"
+          },
+          "usuario": {
+            "$ref": "#/components/schemas/Usuario"
+          },
+          "recepcaos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItensRecepcao"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Usuario": {
+        "type": "object",
+        "properties": {
+          "idUsuario": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefone": {
+            "type": "string",
+            "nullable": true
+          },
+          "endereco": {
+            "type": "string",
+            "nullable": true
+          },
+          "cpfCnpj": {
+            "type": "string",
+            "nullable": true
+          },
+          "doador": {
+            "$ref": "#/components/schemas/Doador"
+          },
+          "recepcaos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Recepcao"
+            },
+            "nullable": true
+          },
+          "tipoPessoa": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

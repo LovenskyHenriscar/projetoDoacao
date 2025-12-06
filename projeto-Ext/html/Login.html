@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Projeto Doação</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Fonte amorosa para o título -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Nosso CSS -->
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+  <!-- Efeito de ícones flutuantes de doação -->
+  <div class="float-container"></div>
+
+  <!-- Título amoroso relacionado a doação -->
+  <div class="page-title text-center mb-4" style="position: relative; z-index: 1;">
+    <h1 style="color: var(--primaria); font-family: 'Great Vibes', cursive; font-size: 3rem;">
+      Compartilhe Amor, Doe Esperança
+    </h1>
+    <p class="lead">Cada gesto faz diferença</p>
+  </div>
+
+  <div class="container" style="max-width: 400px; position: relative; z-index: 1;">
+    <div class="card p-4">
+      <h2 class="text-center mb-4">Login</h2>
+      <form id="formLogin">
+        <div class="mb-3">
+          <label for="loginEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="loginEmail" required />
+        </div>
+        <div class="mb-3">
+          <label for="loginSenha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="loginSenha" required />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+      </form>
+      <p class="mt-3 text-center">
+        Não tem uma conta? <a href="cadastrar.html">Cadastre-se aqui</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="../js/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Gera ícones flutuantes
+    const container = document.querySelector('.float-container');
+    for (let i = 0; i < 20; i++) {
+      const icon = document.createElement('div');
+      icon.classList.add('float-icon');
+      const size = Math.random() * 20 + 20;
+      icon.style.width = `${size}px`;
+      icon.style.height = `${size}px`;
+      icon.style.left = Math.random() * 100 + 'vw';
+      icon.style.animationDuration = Math.random() * 8 + 6 + 's';
+      icon.style.animationDelay = Math.random() * 5 + 's';
+      container.appendChild(icon);
+    }
+  </script>
+</body>
+</html>

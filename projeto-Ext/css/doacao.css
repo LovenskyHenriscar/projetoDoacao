@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Great+Vibes&display=swap');
+
+:root {
+  --primaria: #4A90E2;
+  --secundaria: #7ED6A7;
+  --fundo: #F5F7FA;
+  --texto: #333333;
+  --destaque: #FFA65E;
+}
+
+/* Layout geral */
+body {
+  background: linear-gradient(135deg, var(--fundo) 0%, #E8F0F6 100%);
+  font-family: 'Inter', sans-serif;
+  color: var(--texto);
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Navbar personalizada */
+.navbar {
+  background-color: var(--primaria) !important;
+}
+.navbar-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.75rem;
+  color: white !important;
+}
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: var(--destaque) !important;
+}
+
+/* Título da página */
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Labels e inputs */
+.form-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: var(--texto);
+}
+.form-control,
+.form-select,
+textarea.form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+}
+.form-control::placeholder {
+  color: #bbb;
+}
+.form-control:focus,
+.form-select:focus,
+textarea.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(74,144,226,0.25);
+  border-color: var(--primaria);
+}
+
+/* Botão de submit (Cadastrar Doação) */
+.btn-doar {
+  background-color: var(--destaque);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.btn-doar:hover {
+  background-color: var(--primaria);
+}

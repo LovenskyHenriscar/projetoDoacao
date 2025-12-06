@@ -1,0 +1,62 @@
+/* Mantém height 100% para o fundo cobrir toda a tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  body {
+  background: linear-gradient(135deg, #F5F7FA 0%, #E8F0F6 100%);
+}
+
+}
+
+/* Fundo full-screen */
+body {
+  
+  background-size: cover;
+
+  /* Centraliza o card vertical e horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card com leve transparência e sombra */
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+/* Título e botão com a cor da sua marca */
+.card h2 {
+  color: #2a9d8f;
+}
+.btn-primary {
+  background-color: #2a9d8f;
+  border-color: #2a9d8f;
+}
+/* Fundo de ícones flutuantes */
+.float-container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+.float-icon {
+  position: absolute;
+  background: url("data:image/svg+xml;utf8,<svg fill='%23FFA65E' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>") no-repeat center center;
+  background-size: contain;
+  opacity: 0.7;
+  animation: floatUp linear infinite;
+}
+@keyframes floatUp {
+  0%   { transform: translateY(100vh) scale(0.5); opacity: 0; }
+  10%  { opacity: 0.4; }
+  100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+.page-title h1 {
+  padding-left: 8.5rem; /* ajuste esse valor conforme quiser */
+}
+

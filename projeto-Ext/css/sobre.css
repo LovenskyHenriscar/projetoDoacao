@@ -1,0 +1,45 @@
+body {
+  background: linear-gradient(135deg, #be8bf5, #2574fc2c);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: 700;
+}
+
+#motivacao {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 1rem;
+  height: 2rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\4 Semestre\\Projeto Extens\u00E3o\\back-end\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AA129A9-44C5-4A0A-9A68-5354E7B5DF25}|ClassLibrary1\\ClassLibrary1.csproj|e:\\4 semestre\\projeto extens\u00E3o\\back-end\\webapplication1\\classlibrary1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AA129A9-44C5-4A0A-9A68-5354E7B5DF25}|ClassLibrary1\\ClassLibrary1.csproj|solutionrelative:classlibrary1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\4 Semestre\\Projeto Extens\u00E3o\\back-end\\WebApplication1\\ClassLibrary1\\Class1.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Class1.cs",
+              "ToolTip": "E:\\4 Semestre\\Projeto Extens\u00E3o\\back-end\\WebApplication1\\ClassLibrary1\\Class1.cs",
+              "RelativeToolTip": "ClassLibrary1\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T00:26:59.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

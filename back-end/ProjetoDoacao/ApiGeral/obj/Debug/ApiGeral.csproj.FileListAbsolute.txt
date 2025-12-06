@@ -1,0 +1,55 @@
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.dll
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.pdb
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.dll
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.dll
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.xml
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.xml
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.AssemblyReference.cache
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.CoreCompileInputs.cache
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.Up2Date
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.dll
+E:\4 Semestre\Projeto Extensão\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.pdb
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.dll
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.pdb
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.dll
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.dll
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.xml
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.xml
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.AssemblyReference.cache
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.CoreCompileInputs.cache
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.Up2Date
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.dll
+D:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.pdb
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.dll
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.pdb
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.dll
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.dll
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.xml
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.xml
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.AssemblyReference.cache
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.CoreCompileInputs.cache
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.Up2Date
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.dll
+E:\4 Semestre\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.pdb
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.dll
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.pdb
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.dll
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.dll
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.xml
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.xml
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.AssemblyReference.cache
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.CoreCompileInputs.cache
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.Up2Date
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.dll
+C:\Projeto_Extensao_Doacao\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.pdb
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.dll
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\ApiGeral.pdb
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.dll
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.dll
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.xml
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\bin\Debug\Dapper.Contrib.xml
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.AssemblyReference.cache
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.CoreCompileInputs.cache
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.csproj.Up2Date
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.dll
+E:\4 Semestre\ProjetoExtensao2.0\projeto extensao\back-end\ProjetoDoacao\ApiGeral\obj\Debug\ApiGeral.pdb

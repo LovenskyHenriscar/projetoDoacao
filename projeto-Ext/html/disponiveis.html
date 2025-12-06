@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Itens Disponíveis para Doação</title>
+
+  <!-- Fontes: Inter e Great Vibes -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Nosso CSS -->
+  <link rel="stylesheet" href="../css/disponiveis.css" />
+  <!-- OpenLayers CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol/ol.css" />
+</head>
+<body>
+  <!-- Navbar personalizada -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">DoaFácil</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="Doacao.html">Quero Doar</a></li>
+          <li class="nav-item"><a class="nav-link" href="historico.html">Meu Histórico</a></li>
+           <li class="nav-item">
+              <a class="nav-link" href="#" onclick="logout()">Sair</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+    <h1 class="mb-4 text-center title">Itens Disponíveis para Doação</h1>
+    <div id="alertPlaceholder"></div>
+    <div class="row" id="listaDoacoes"></div>
+  </div>
+
+  <!-- Modal de Detalhes da Doação -->
+  <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="detailModalLabel">Detalhes da Doação</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Doador:</strong> <span id="modalDoadorNome"></span></p>
+          <p><strong>Telefone:</strong> <span id="modalDoadorTelefone"></span></p>
+          <p><strong>Retirada:</strong> <span id="modalRetiradaInfo"></span></p>
+
+          <div id="modalEndereco" style="display:none; margin-bottom:1rem;">
+            <p><strong>Endereço:</strong> <span id="modalEnderecoTexto"></span></p>
+            <div id="map" style="width:100%; height:300px; display:none;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/sair.js"></script>
+  <!-- OpenLayers JS -->
+  <script src="https://cdn.jsdelivr.net/npm/ol/dist/ol.js"></script>
+  <!-- Nosso JS -->
+  <script src="../js/disponiveis.js"></script>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
